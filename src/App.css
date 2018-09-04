@@ -1,0 +1,138 @@
+@import '~antd/dist/antd.css';
+@font-face {
+  font-family: 'Hurme';
+  src: url('build/fonts/HurmeGeometricSans3 Light.otf');
+}
+
+.App {
+  padding-top: 3rem;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #f2f2f2;
+  font-family: 'Hurme';
+  font-size: 15px;
+  color: #262626;
+  /* background-color: #8892a1; */
+}
+
+.App-header {
+  padding: 1rem;
+  padding-bottom: 0px;
+  margin-left: 8rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.App-title {
+  margin-bottom: 0px;
+  margin-left: 39px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+}
+
+.div-table{
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 67%;
+}
+
+form {
+  width: 50rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 90px;
+  padding-bottom: 1.5rem;
+  border-top: 1px solid #8c8c8c; 
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0px 1rem 0px;
+  width: 18rem;
+  margin: 0px;
+  border-bottom: 1px solid #8c8c8c;
+}
+
+.textInput {
+  border-right: 1px solid #8c8c8c;
+  padding-left: 0px;
+}
+
+.checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0px;
+}
+
+.yes-no{
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.checkbox-label{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+input {
+  border: 1px solid  #d9d9d9;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+  width: 94%;
+  margin-bottom: 2rem;
+  margin-left: 4.5rem;
+}
+
+.finalText {
+  font-size: 28px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 19rem;
+  margin-top: 6rem;
+  margin-left: 4.5rem;
+}
+
+@media only screen and (max-width: 600px) { 
+  .App {
+    min-height: 150vh;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+  form {
+    flex-direction: column;
+  }
+  .App-header {
+    justify-content: center;
+    margin: 0px;
+  }
+  .App-title {
+    padding: 10px 0px 10px 0px;
+    font-size: 24px;
+    margin: 0px;
+  }
+  .final-text{
+    margin: 0px;
+  }   
+  .submitButton{
+    margin-left: 2rem;
+  } 
+}
